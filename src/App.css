@@ -1,0 +1,120 @@
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #4a1f35;
+}
+
+body {
+  background-color: #fff0f6;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ff8fc7;
+  border-radius: 10px;
+  background-color: #ffd6e8;
+  color: #7a284b;
+  outline: none;
+}
+
+input::placeholder {
+  color: #b85c88;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  background-color: #ffe3f0;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid #f3a6c8;
+}
+
+button {
+  padding: 10px 14px;
+  cursor: pointer;
+  background-color: #ff8fc7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #ff6fb6;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.day-card {
+  border: 1px solid #f3a6c8;
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 250px;
+  background-color: #ffe3f0;
+}
+
+.day-card h2,
+.day-card h3,
+.day-card p {
+  margin: 6px 0;
+}
+
+.today-label {
+  color: #d63384;
+  font-size: 20px;
+  font-weight: bold;
+  min-height: 24px;
+  display: block;
+}
+
+.todo-item {
+  position: relative;
+  background: white;
+  border: 1px solid #f3a6c8;
+  padding: 22px 8px 8px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  color: #d63384;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #a61e5c;
+  background: transparent;
+}
